@@ -1,0 +1,32 @@
+class AppStrings {
+  static const profile = 'Profile';
+  static const editProfile = 'Edit Profile';
+  static const logout = 'Logout';
+  static const firstName = 'First Name';
+  static const lastName = 'Last Name';
+  static const email = 'Email';
+  static const phone = 'Phone';
+  static const location = 'Location';
+  static const password = 'Password';
+  static const loginToContinue = 'Login to continue';
+  static const signup = 'Sign Up';
+  static const forgotPassword = 'Forgot Password?';
+  static const signUpWithUs = 'Sign Up With Us';
+  static const followers = 'Followers';
+  static const following = 'Following';
+  static const posts = 'Posts';
+  static const home = 'Home';
+  static const appName = 'My App';
+  static const helloWelcome = ' Hello Welcome back!';
+  static const user = 'user';
+
+  static const massagae = 'Message';
+  static const add = 'Add';
+  static const search = 'Search';
+  static const favorites = 'favorites';
+  static const loginWithGoogle = 'login with Google';
+  static const loginWithFacebook = 'login with Facebook';
+
+  
+
+}

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/config/app_icons.dart';
 import 'package:flutter_application_1/pages/home_page.dart';
 import 'package:flutter_application_1/pages/profile_page.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -25,7 +26,8 @@ class _MainPageState extends State<MainPage> {
         items: [
           BottomNavigationBarItem(
             icon: SvgPicture.asset(
-              'assets/svg/home1.svg',
+              AppIcons.icHome,
+              // 'assets/svg/home.svg',
               width: 20,
               height: 20,
             ),
@@ -34,49 +36,48 @@ class _MainPageState extends State<MainPage> {
             //backgroundColor: Colors.blue,
             // activeIcon: Icon(Icons.home_filled),
             activeIcon: SvgPicture.asset(
-              'assets/svg/home1.svg',
+              AppIcons.icHome,
+              // 'assets/svg/home1.svg',
               width: 20,
               height: 20,
             ),
           ),
           BottomNavigationBarItem(
             icon: SvgPicture.asset(
-              'assets/svg/search.svg',
+              AppIcons.icFavorite,
+              width: 25,
+              height: 25,
+            ),
+            label: 'Favorite',
+          ),
+          BottomNavigationBarItem(
+            icon: SvgPicture.asset(
+              AppIcons.icAdd,
+              // 'assets/svg/search.svg',
               width: 20,
               height: 20,
             ),
-            label: 'Search',
+            label: 'Add',
             //backgroundColor: Colors.purple,
             //activeIcon: Icon(Icons.search),
             activeIcon: SvgPicture.asset(
-              'assets/svg/search.svg',
+              AppIcons.icAdd,
+              // 'assets/svg/search.svg',
               width: 23,
               height: 23,
             ),
           ),
           BottomNavigationBarItem(
             icon: SvgPicture.asset(
-              'assets/svg/massage.svg',
+              AppIcons.icMassage,
               width: 20,
               height: 20,
             ),
-            label: 'Add',
-            //backgroundColor: Colors.green,
+            label: 'Massage',
           ),
           BottomNavigationBarItem(
             icon: SvgPicture.asset(
-              'assets/svg/favorite.svg',
-              width: 25,
-              height: 25,
-            ),
-
-            label: 'Favorite',
-            //backgroundColor: Colors.red,
-            //activeIcon: Icon(Icons.favorite),
-          ),
-          BottomNavigationBarItem(
-            icon: SvgPicture.asset(
-              'assets/svg/user.svg',
+              AppIcons.icUser,
               width: 25,
               height: 25,
             ),

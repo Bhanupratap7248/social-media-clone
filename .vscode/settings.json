@@ -2,5 +2,6 @@
     "dart.previewFlutterUiGuides": false,
     "dart.previewFlutterUiGuidesCustomTracking": false,
     "editor.guides.indentation": true,
-    "editor.detectIndentation": true
+    "editor.detectIndentation": true,
+    "files.autoSave": "afterDelay"
 }

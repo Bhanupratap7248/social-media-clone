@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/config/app_icons.dart';
+import 'package:flutter_application_1/config/app_routs.dart';
+import 'package:flutter_application_1/config/app_strings.dart';
 import 'package:flutter_application_1/styles/app_colors.dart';
 
 class LoginPage extends StatefulWidget {
@@ -27,7 +30,7 @@ class _LoginPageState extends State<LoginPage> {
                 // ),
                 Spacer(),
                 Text(
-                  'hello, World Back!',
+                  AppStrings.helloWelcome,
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 20,
@@ -35,7 +38,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 SizedBox(height: 60),
 
-                Text('Login to continue',
+                Text(AppStrings.loginToContinue,
                     style: TextStyle(color: Colors.white)),
                 SizedBox(height: 16),
                 TextField(
@@ -53,7 +56,7 @@ class _LoginPageState extends State<LoginPage> {
                 TextField(
                   obscureText: _isObscure,
                   decoration: InputDecoration(
-                    hintText: 'Enter your password',
+                    hintText: AppStrings.password,
                     labelText: 'Password',
                     filled: true,
                     fillColor: const Color.fromARGB(186, 150, 227, 209),
@@ -79,7 +82,9 @@ class _LoginPageState extends State<LoginPage> {
                       // print('clicked');
                     },
                     style: TextButton.styleFrom(foregroundColor: Colors.white),
-                    child: Text('Forgot Password?'),
+                    child: Text(
+                      AppStrings.forgotPassword,
+                    ),
                   ),
                 ),
                 SizedBox(height: 30),
@@ -88,14 +93,18 @@ class _LoginPageState extends State<LoginPage> {
                   width: double.infinity,
                   child: ElevatedButton(
                       onPressed: () {
-                        Navigator.of(context).pushReplacementNamed('/main');
+                        Navigator.of(context).pushReplacementNamed(AppRouts.main);
                       },
                       style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.yellowAccent),
-                      child: Text('Log in')),
+                      child: Text(
+                        AppStrings.loginToContinue,
+                      )),
                 ),
                 SizedBox(height: 35),
-                Text('Sign Up With Us', style: TextStyle(color: Colors.white)),
+                Text(
+                  AppStrings.signUpWithUs,
+                ),
 
                 SizedBox(height: 16),
                 SizedBox(
@@ -114,12 +123,14 @@ class _LoginPageState extends State<LoginPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Image.asset(
-                          'assets/images/google.png',
+                          AppIcons.icfacebook,
                           width: 80,
                           height: 35,
                         ),
                         SizedBox(width: 08),
-                        Text(' Login with Google'),
+                        Text(
+                          AppStrings.loginWithGoogle,
+                        ),
                       ],
                     ),
                   ),
@@ -135,14 +146,16 @@ class _LoginPageState extends State<LoginPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Image.asset(
-                          'assets/images/facebook.png',
+                          AppIcons.icgoogle,
                           width: 80,
                           height: 35,
                         ),
                         SizedBox(
                           height: 12,
                         ),
-                        Text(' Login with Facebook'),
+                        Text(
+                          AppStrings.loginWithFacebook,
+                        ),
                       ],
                     ),
                   ),
@@ -161,7 +174,7 @@ class _LoginPageState extends State<LoginPage> {
                       style:
                           TextButton.styleFrom(foregroundColor: Colors.amber),
                       child: Text(
-                        'Sign up',
+                        AppStrings.signup,
                         style: TextStyle(decoration: TextDecoration.none),
                       ),
                     ),
