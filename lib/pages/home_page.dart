@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/components/post_item.dart';
 import 'package:flutter_application_1/components/toolbar.dart';
 import 'package:flutter_application_1/config/app_icons.dart';
-//import 'package:flutter_application_1/styles/app_colors.dart';
-//import 'package:flutter_application_1/styles/app_text.dart';
+import 'package:flutter_application_1/styles/app_colors.dart';
+import 'package:flutter_application_1/styles/app_text.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class HomePage extends StatelessWidget {
