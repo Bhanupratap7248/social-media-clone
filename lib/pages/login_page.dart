@@ -103,7 +103,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 SizedBox(height: 35),
                 Text(
-                  AppStrings.signUpWithUs,
+                  AppStrings.signInWithUs,
                 ),
 
                 SizedBox(height: 16),

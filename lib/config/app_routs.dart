@@ -3,6 +3,7 @@ import 'package:flutter_application_1/pages/home_page.dart';
 import 'package:flutter_application_1/pages/login_page.dart';
 import 'package:flutter_application_1/pages/main_page.dart';
 
+
 class AppRouts {
  
    static final pages = {

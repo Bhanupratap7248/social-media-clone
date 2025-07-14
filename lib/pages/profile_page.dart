@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_application_1/components/toolbar.dart';
+import 'package:flutter_application_1/components/user_avatar.dart';
 import 'package:flutter_application_1/config/app_icons.dart';
 import 'package:flutter_application_1/config/app_routs.dart';
 import 'package:flutter_application_1/config/app_strings.dart';
@@ -53,13 +54,8 @@ class ProfilePage extends StatelessWidget {
       ),
       body: Column(
         children: [
-          ClipRRect(
-            borderRadius: BorderRadius.circular(16),
-            child: Image.asset(
-              AppIcons.icUser1,
-              height: 50,
-              width: 50,
-            ),
+         UserAvatar(
+            size: 90,
           ),
           SizedBox(height: 24),
           Text('Monika Rawat', style: AppText.header2),

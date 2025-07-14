@@ -1,4 +1,6 @@
 class AppStrings {
+  
+  static const hellowelcome = 'hello,Welcome Back';
   static const profile = 'Profile';
   static const editProfile = 'Edit Profile';
   static const logout = 'Logout';
@@ -9,9 +11,10 @@ class AppStrings {
   static const location = 'Location';
   static const password = 'Password';
   static const loginToContinue = 'Login to continue';
+  static const username = 'Username';
   static const signup = 'Sign Up';
   static const forgotPassword = 'Forgot Password?';
-  static const signUpWithUs = 'Sign Up With Us';
+  static const signInWithUs = 'Sign Up With ';
   static const followers = 'Followers';
   static const following = 'Following';
   static const posts = 'Posts';
@@ -19,13 +22,16 @@ class AppStrings {
   static const appName = 'My App';
   static const helloWelcome = ' Hello Welcome back!';
   static const user = 'user';
-
   static const massagae = 'Message';
   static const add = 'Add';
   static const search = 'Search';
   static const favorites = 'favorites';
   static const loginWithGoogle = 'login with Google';
   static const loginWithFacebook = 'login with Facebook';
+  static const dontHaveAnAccount = 'Don\'t have an account? ';
+  static const phonenumber = 'Phone Number';
+  static const locations = 'Location';
+  static const birthday = 'Birthday';
 
   
 
