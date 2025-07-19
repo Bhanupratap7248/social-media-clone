@@ -1,5 +1,4 @@
 class AppStrings {
-  
   static const hellowelcome = 'hello,Welcome Back';
   static const profile = 'Profile';
   static const editProfile = 'Edit Profile';
@@ -32,7 +31,7 @@ class AppStrings {
   static const phonenumber = 'Phone Number';
   static const locations = 'Location';
   static const birthday = 'Birthday';
-
-  
-
+  static const male = 'male';
+  static const female = 'female';
+  static const other  = 'other';
 }

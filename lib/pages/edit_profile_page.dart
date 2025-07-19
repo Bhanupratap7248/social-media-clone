@@ -5,9 +5,18 @@ import 'package:flutter_application_1/config/app_strings.dart';
 import 'package:flutter_application_1/components/user_avatar.dart';
 import 'package:flutter_application_1/styles/app_colors.dart';
 
-class EditProfilePage extends StatelessWidget {
-  const EditProfilePage({super.key});
 
+enum Gender{none,male,female,other}
+
+class EditProfilePage extends StatefulWidget {
+   EditProfilePage({super.key});
+
+  @override
+  State<EditProfilePage> createState() => _EditProfilePageState();
+}
+
+class _EditProfilePageState extends State<EditProfilePage> {
+   var gender = Gender.none; 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,6 +63,7 @@ class EditProfilePage extends StatelessWidget {
               AppTextField(hint: AppStrings.location),
               SizedBox(height: 10),
               AppTextField(hint: AppStrings.birthday),
+              
             ],
           ),
         ),
